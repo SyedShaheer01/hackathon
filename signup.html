@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>figma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="head">
+    <h2><a href="./index.html">Login</a> </h2>
+  </div>
+
+  <div class="mainWraper">
+    <div class="loginForm">
+      <form autocomplete="off" onsubmit="return false">
+        <h1 class="text-center">Sign Up</h1>
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input placeholder="First Name" type="email" class="form-control" id="firstName" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input placeholder="last Name" type="text" class="form-control" id="lastName">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input placeholder="Email" type="text" class="form-control" id="email">
+          <span id="emailHelp" style="display: none;" class="form-text text-warning"> email is already exists!</span>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input placeholder="Password" type="text" class="form-control" id="password">
+        </div>
+        <div class="button text-center mt-5 mb-2">
+          <button type="button" class="btnButton1" id="createAccountBtn">Signup</button>
+        </div>
+        <a class="text-center d-block text-dark" href="./index.html">alerady have an account</a>
+      </form>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="./firebaseConfig.js" type="module"></script>
+  <script src="./signup.js" type="module"></script>
+
+</html>

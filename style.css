@@ -1,0 +1,97 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+p{
+
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.head{
+    background-color: #6f42c1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px;
+    
+    
+
+    
+}
+.head h2,h2 a{
+    margin-right: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.mainWraper {
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(./loginBg.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    /* height: 50vh; */
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
+    /* margin: 5px; */
+}
+
+.loginForm {
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 1px solid gray; */
+    max-width: 550px;
+    width: 30%;
+    /* backdrop-filter: blur(3px); */
+    color:black;
+    /* font-size: 17px; */
+    
+    /* background-color: #fff; */
+    box-shadow: -1px 2px 22px 4px white;
+    -webkit-box-shadow: -1px 2px 22px 4px rgba(0, 0, 0, 0.1);
+    /* -moz-box-shadow: -1px 2px 22px 4px rgba(0, 0, 0, 0.75); */
+}
+
+.btnButton{
+    width: 60%;
+    max-width: 200px;
+    display: inline-block;
+}
+.btnButton1{
+    background-color: #6f42c1;
+    color: white;
+    border-radius: 7px;
+    padding: 8px 25px;
+    border: none;
+}
+
+#psShow {
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+    cursor: pointer;
+    color: #666;
+    display: none;
+}
+.signUpMessage{
+    transform: translateY(-200%);
+    opacity: 0;
+    animation-duration: 1.5s;
+    background-color: #6f42c1;
+}
+@keyframes message{
+    0%{opacity: 0;transform: translateY(-200%);}
+    100%{opacity: 1;transform: translateY(0);}
+}
